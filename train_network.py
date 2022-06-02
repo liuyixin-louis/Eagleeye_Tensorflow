@@ -95,7 +95,7 @@ class TrainTeacher(object):
 def main():
     
     parser = argparse.ArgumentParser()
-    parser.add_argument('--dataset_name', type=str, default='cifar10', choices=['cifar10', 'cifar100'] help='Dataset [ "cifar10", "cifar100" ]')
+    parser.add_argument('--dataset_name', type=str, default='cifar10', choices=['cifar10', 'cifar100'],help='Dataset [ "cifar10", "cifar100" ]')
     parser.add_argument('--model_name', type=str, default='mobilenetv2', help='Model name')
     parser.add_argument('--batch_size', type=int, default=128, help='Batch size')
     parser.add_argument('--epochs', type=int, default=200, help='Epochs')

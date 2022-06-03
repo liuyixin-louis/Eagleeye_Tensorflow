@@ -24,7 +24,7 @@ def main():
 
     os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
     os.environ['TF2_BEHAVIOR'] = '1'
-    os.environ['CUDA_VISIBLE_DEVICES']= '0'
+    os.environ['CUDA_VISIBLE_DEVICES']= '2,3,4,5,6,7,8,9'
 
     config = tf.compat.v1.ConfigProto()
     config.gpu_options.per_process_gpu_memory_fraction = 0.8
@@ -43,7 +43,7 @@ def main():
                           num_candidates=args.num_candidates,
                           result_dir=args.result_dir,
                           data_augmentation=args.data_augmentation
-                         )
+    )
 
     eagleeye_obj.build()
 
